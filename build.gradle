@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+java {
+    sourceCompatibility = JavaVersion.VERSION_17  // Remplacez '11' par la version de Java que vous utilisez
+    targetCompatibility = JavaVersion.VERSION_17  // Remplacez '11' par la version de Java que vous utilisez
+}
+compileJava.options.encoding = 'UTF-8'  // Définir l'encodage
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
+    implementation 'org.slf4j:slf4j-api:2.0.12'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.0-M1'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+        testImplementation 'org.assertj:assertj-core:3.25.3'
+}
+
+test {
+    useJUnitPlatform()
+}

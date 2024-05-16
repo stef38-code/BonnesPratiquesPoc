@@ -1,0 +1,132 @@
+{
+  "personne": [
+    {
+      "firstName": "Jean",
+      "lastName": "Dupont",
+      "birthDate": "1980-01-01",
+      "spouse": {
+        "firstName": "Marie",
+        "lastName": "Dupont",
+        "birthDate": "1982-02-02"
+      },
+      "address": {
+        "street": "Rue de la Paix",
+        "city": "Paris",
+        "state": "Ile-de-France",
+        "zip": "75000"
+      },
+      "phoneNumbers": [
+        {
+          "number": "0123456789"
+        },
+        {
+          "number": "0987654321"
+        }
+      ],
+      "emails": [
+        {
+          "email": "jean.dupont@example.com"
+        },
+        {
+          "email": "j.dupont@example.com"
+        }
+      ]
+    },
+    {
+      "firstName": "Pierre",
+      "lastName": "Martin",
+      "birthDate": "1975-03-03",
+      "spouse": {
+        "firstName": "Sophie",
+        "lastName": "Martin",
+        "birthDate": "1977-04-04"
+      },
+      "address": {
+        "street": "Rue du Commerce",
+        "city": "Lyon",
+        "state": "Auvergne-Rhône-Alpes",
+        "zip": "69000"
+      },
+      "phoneNumbers": [
+        {
+          "number": "0234567890"
+        },
+        {
+          "number": "0897654321"
+        }
+      ],
+      "emails": [
+        {
+          "email": "pierre.martin@example.com"
+        },
+        {
+          "email": "p.martin@example.com"
+        }
+      ]
+    },
+    {
+      "firstName": "Luc",
+      "lastName": "Lefevre",
+      "birthDate": "1985-05-05",
+      "spouse": {
+        "firstName": "Emma",
+        "lastName": "Lefevre",
+        "birthDate": "1987-06-06"
+      },
+      "address": {
+        "street": "Rue de la République",
+        "city": "Marseille",
+        "state": "Provence-Alpes-Côte d'Azur",
+        "zip": "13000"
+      },
+      "phoneNumbers": [
+        {
+          "number": "0345678901"
+        },
+        {
+          "number": "0786543210"
+        }
+      ],
+      "emails": [
+        {
+          "email": "luc.lefevre@example.com"
+        },
+        {
+          "email": "l.lefevre@example.com"
+        }
+      ]
+    },
+    {
+      "firstName": "François",
+      "lastName": "Petit",
+      "birthDate": "1990-07-07",
+      "spouse": {
+        "firstName": "Julie",
+        "lastName": "Petit",
+        "birthDate": "1992-08-08"
+      },
+      "address": {
+        "street": "Rue de la Liberté",
+        "city": "Toulouse",
+        "state": "Occitanie",
+        "zip": "31000"
+      },
+      "phoneNumbers": [
+        {
+          "number": "0456789012"
+        },
+        {
+          "number": "0687654321"
+        }
+      ],
+      "emails": [
+        {
+          "email": "francois.petit@example.com"
+        },
+        {
+          "email": "f.petit@example.com"
+        }
+      ]
+    }
+  ]
+}
