@@ -19,6 +19,10 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
     implementation 'org.slf4j:slf4j-api:2.0.12'
 
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+
     testImplementation 'org.junit.jupiter:junit-jupiter:5.11.0-M1'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
         testImplementation 'org.assertj:assertj-core:3.25.3'
@@ -26,4 +30,24 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    // Variables pour compter le nombre de tests réussis et échoués
+    int passedTests = 0
+    int failedTests = 0
+
+    // Enregistrer les résultats des tests individuels
+    afterTest { descriptor, result ->
+        if (result.resultType == TestResult.ResultType.SUCCESS) {
+            passedTests++
+        } else if (result.resultType == TestResult.ResultType.FAILURE) {
+            failedTests++
+        }
+    }
+
+    // Afficher le nombre total de tests réussis et échoués
+    afterSuite { suite, result ->
+        if (!suite.parent) { // root suite
+            println("Nombre de tests reussis (OK): " + passedTests)
+            println("Nombre de tests echoues (KO): " + failedTests)
+        }
+    }
 }

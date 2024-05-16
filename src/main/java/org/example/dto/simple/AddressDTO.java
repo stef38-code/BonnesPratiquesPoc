@@ -6,16 +6,6 @@ public class AddressDTO {
     private String state;
     private String zip;
 
-    public AddressDTO(String city,
-                      String state,
-                      String street,
-                      String zip) {
-        this.city = city;
-        this.state = state;
-        this.street = street;
-        this.zip = zip;
-    }
-
     public String getCity() {
         return city;
     }

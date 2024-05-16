@@ -3,6 +3,9 @@ package org.example.dto.simple;
 public class PhoneNumberDTO {
     private String number;
 
+    public PhoneNumberDTO() {
+    }
+
     public PhoneNumberDTO(String number) {
         this.number = number;
     }

@@ -1,11 +1,8 @@
 package org.example.dto.simple;
 
-import com.fasterxml.jackson.annotation.JsonRootName;
-
 import java.time.LocalDate;
 import java.util.List;
 
-@JsonRootName(value = "personne")
 public class PersonDTO {
     private String firstName;
     private String lastName;
@@ -15,23 +12,8 @@ public class PersonDTO {
     private List<PhoneNumberDTO> phoneNumbers;
     private List<EmailDTO> emails;
 
-    public PersonDTO(AddressDTO address,
-                     LocalDate birthDate,
-                     List<EmailDTO> emails,
-                     String firstName,
-                     String lastName,
-                     List<PhoneNumberDTO> phoneNumbers,
-                     PersonDTO spouse) {
-
-        this.address = address;
-        this.birthDate = birthDate;
-        this.emails = emails;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phoneNumbers = phoneNumbers;
-        this.spouse = spouse;
+    public PersonDTO() {
     }
-// getters and setters
 
     public AddressDTO getAddress() {
         return address;
