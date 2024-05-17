@@ -1,4 +1,4 @@
-package org.example.dto.apifluent;
+package org.example.dto.apifluent.person;
 
 import java.time.LocalDate;
 

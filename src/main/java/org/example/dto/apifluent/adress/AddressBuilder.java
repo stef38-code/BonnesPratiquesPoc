@@ -1,7 +1,7 @@
-package org.example.dto.apifluent;
+package org.example.dto.apifluent.adress;
 
 public class AddressBuilder implements StreetStep, CityStep, StateStep, ZipStep, AddressBuildStep {
-    private AddressDTO address;
+    private final AddressDTO address;
 
     public AddressBuilder() {
         address = new AddressDTO();

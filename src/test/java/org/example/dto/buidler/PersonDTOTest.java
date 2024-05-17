@@ -7,11 +7,11 @@ import java.time.LocalDate;
 import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 class PersonDTOTest {
     @Test
-    @DisplayName("Check PersonDTO Builder and Getters")
+    @DisplayName("Check PersonDTO PersonBuilder and Getters")
     void checkPersonDTOBuilderAndGetters() {
         PersonDTO person = PersonDTO.builder()
                 .firstName("John")
