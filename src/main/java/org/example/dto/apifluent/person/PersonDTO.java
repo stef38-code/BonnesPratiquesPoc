@@ -10,6 +10,10 @@ import org.example.dto.apifluent.phone.PhoneNumberDTO;
 
 import java.time.LocalDate;
 import java.util.List;
+/**
+ * A DTO representing a person.
+ */
+
 
 @Getter
 @Setter

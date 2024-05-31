@@ -1,4 +1,4 @@
-package org.exemple.utils;
+package org.example.tools.tu.json;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -15,10 +15,13 @@ import java.util.Objects;
 import static org.slf4j.LoggerFactory.getLogger;
 
 public class JsonUtil {
+    private JsonUtil() {
+        throw new UnsupportedOperationException("JsonUtil is a utility class and cannot be instantiated");
+    }
     private static final Logger log = getLogger(JsonUtil.class);
 
 
-    public static <T> List<T> convertJsonFileToList(String jsonFilePath, Class<T> clazz) throws IOException {
+    public static <T> List<T> convertJsonFileToList(String jsonFilePath) throws IOException {
 
         File file = getFileRessource(jsonFilePath);
         ObjectMapper objectMapper = new ObjectMapper();
